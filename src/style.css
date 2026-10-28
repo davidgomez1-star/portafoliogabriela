@@ -2536,3 +2536,115 @@ body.content-modal-open {
     zoom: 0.72;
   }
 }
+
+
+/* ========================================
+   MÉTRICAS — COMPOSICIÓN CON FONDO
+======================================== */
+
+.metrics {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  min-height: 680px;
+  padding: 64px 6%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  /* Imagen rosa utilizada como fondo */
+  background-color: #f5d6d8;
+  background-image: url("/images/seccioinmetricas.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.metrics-content {
+  position: relative;
+  z-index: 1;
+  width: 54%;
+  max-width: 720px;
+}
+
+.metrics-heading {
+  margin-bottom: 30px;
+}
+
+.metrics-eyebrow {
+  margin: 0 0 12px;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  color: #80565b;
+}
+
+.metrics-heading h2 {
+  margin: 0;
+  color: #563b40;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.metrics-heading h2 em {
+  font-weight: 400;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 600px;
+}
+
+.metric-card {
+  min-width: 0;
+  margin: 0;
+  padding: 8px;
+  background: rgba(255, 250, 249, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(92, 53, 59, 0.09);
+  backdrop-filter: blur(4px);
+}
+
+.metric-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Adaptación para móviles */
+@media (max-width: 700px) {
+  .metrics {
+    min-height: auto;
+    padding: 300px 20px 48px;
+    background-position: 68% top;
+    background-size: auto 360px;
+    background-color: #f8e5e6;
+  }
+
+  .metrics-content {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .metrics-heading {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .metrics-heading h2 {
+    font-size: clamp(1.8rem, 7vw, 2.5rem);
+  }
+
+  .metrics-grid {
+    gap: 12px;
+  }
+
+  .metric-card {
+    padding: 5px;
+  }
+}
