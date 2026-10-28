@@ -292,18 +292,50 @@ if (brandsCanvas && brandsSection) {
   const closeButtons = modal.querySelectorAll('[data-close-modal]');
 
   const categories = {
-    beauty: {
+
+beauty: {
+  title: 'Belleza y Skincare',
+  description:
+    'Rutinas, productos favoritos y experiencias de cuidado personal.',
+  posts: [
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DeQDM17xtz9/',
       title: 'Belleza y Skincare',
-      description:
-        'Rutinas, productos favoritos y experiencias de cuidado personal.',
-      posts: [
-        {
-          instagramUrl: 'https://www.instagram.com/reel/DeQDM17xtz9/',
-          title: 'Belleza y Skincare',
-          description: 'Contenido de cuidado personal y belleza.',
-        },
-      ],
+      description: 'Contenido de cuidado personal y belleza.',
     },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DbUFH15RDx1/',
+      title: 'Belleza y Skincare',
+      description: 'Contenido de cuidado personal y belleza.',
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DcmLJsRRgBA/',
+      title: 'Belleza y Skincare',
+      description: 'Contenido de cuidado personal y belleza.',
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DdXdjFmx_YC/',
+      title: 'Belleza y Skincare',
+      description: 'Contenido de cuidado personal y belleza.',
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DdpW9G9xRVe/',
+      title: 'Belleza y Skincare',
+      description: 'Contenido de cuidado personal y belleza.',
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DeFVTb6RE4Z/',
+      title: 'Belleza y Skincare',
+      description: 'Contenido de cuidado personal y belleza.',
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DeIVlyIR7Pi/',
+      title: 'Belleza y Skincare',
+      description: 'Contenido de cuidado personal y belleza.',
+    },
+  ],
+},
+
 
     food: {
       title: 'Gastronomía',
