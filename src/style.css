@@ -1959,7 +1959,7 @@ section[id] {
       rgb(238 230 226 / 65%) 47%,
       rgb(238 230 226 / 0%) 70%
     ),
-    url("public/images/portada-gabriela.png");
+    url("/images/portada-gabriela.png");
   background-position: center, center 38%;
   background-size: cover;
   background-repeat: no-repeat;
