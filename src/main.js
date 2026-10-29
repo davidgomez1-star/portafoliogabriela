@@ -510,3 +510,158 @@ if (brandsCanvas && brandsSection) {
     }
   });
 })();
+
+/* Carrusel de testimonios */
+const testimonialsCarousel = document.querySelector(
+  ".testimonials-carousel"
+);
+
+const testimonialsPrev = document.querySelector(
+  ".testimonial-prev"
+);
+
+const testimonialsNext = document.querySelector(
+  ".testimonial-next"
+);
+
+if (testimonialsCarousel && testimonialsPrev && testimonialsNext) {
+  const scrollTestimonials = (direction) => {
+    const card = testimonialsCarousel.querySelector(
+      ".testimonial-card"
+    );
+
+    if (!card) return;
+
+    const track = testimonialsCarousel.querySelector(
+      ".testimonials-track"
+    );
+
+    const styles = window.getComputedStyle(track);
+    const gap = parseFloat(styles.columnGap) || 0;
+    const distance = card.getBoundingClientRect().width + gap;
+
+    testimonialsCarousel.scrollBy({
+      left: direction * distance,
+      behavior: "smooth"
+    });
+  };
+
+  testimonialsPrev.addEventListener("click", () => {
+    scrollTestimonials(-1);
+  });
+
+  testimonialsNext.addEventListener("click", () => {
+    scrollTestimonials(1);
+  });
+}
+
+/* Ampliación de testimonios */
+const testimonialCards = document.querySelectorAll(
+  ".testimonial-card"
+);
+
+const testimonialLightbox = document.querySelector(
+  "#testimonial-lightbox"
+);
+
+const testimonialLightboxImage = testimonialLightbox?.querySelector("img");
+
+const testimonialLightboxClose = testimonialLightbox?.querySelector(
+  ".testimonial-lightbox-close"
+);
+
+let testimonialPreviousFocus = null;
+
+function openTestimonialLightbox(image, card) {
+  if (!testimonialLightbox || !testimonialLightboxImage) return;
+
+  testimonialPreviousFocus = card;
+
+  testimonialLightboxImage.src = image.currentSrc || image.src;
+  testimonialLightboxImage.alt = image.alt || "Testimonio ampliado";
+
+  testimonialLightbox.classList.add("is-open");
+  testimonialLightbox.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+
+  testimonialLightboxClose?.focus();
+}
+
+function closeTestimonialLightbox() {
+  if (!testimonialLightbox) return;
+
+  testimonialLightbox.classList.remove("is-open");
+  testimonialLightbox.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+
+  testimonialPreviousFocus?.focus();
+}
+
+testimonialCards.forEach((card) => {
+  const image = card.querySelector("img");
+
+  if (!image) return;
+
+  card.setAttribute("tabindex", "0");
+  card.setAttribute("role", "button");
+  card.setAttribute("aria-label", "Ampliar testimonio");
+
+  card.addEventListener("click", () => {
+    openTestimonialLightbox(image, card);
+  });
+
+  card.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      openTestimonialLightbox(image, card);
+    }
+  });
+});
+
+testimonialLightboxClose?.addEventListener(
+  "click",
+  closeTestimonialLightbox
+);
+
+testimonialLightbox?.addEventListener("click", (event) => {
+  if (event.target === testimonialLightbox) {
+    closeTestimonialLightbox();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (
+    event.key === "Escape" &&
+    testimonialLightbox?.classList.contains("is-open")
+  ) {
+    closeTestimonialLightbox();
+  }
+});
+
+/* Permitir ampliar las imágenes de métricas */
+const metricCards = document.querySelectorAll(".metric-card");
+
+metricCards.forEach((card) => {
+  const image = card.querySelector("img");
+  if (!image) return;
+
+  card.setAttribute("tabindex", "0");
+  card.setAttribute("role", "button");
+  card.setAttribute("aria-label", "Ampliar métrica");
+
+  card.addEventListener("click", () => {
+    if (typeof openTestimonialLightbox === "function") {
+      openTestimonialLightbox(image, card);
+    }
+  });
+
+  card.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+
+      if (typeof openTestimonialLightbox === "function") {
+        openTestimonialLightbox(image, card);
+      }
+    }
+  });
+});

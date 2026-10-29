@@ -2554,7 +2554,7 @@ body.content-modal-open {
 
   /* Imagen rosa utilizada como fondo */
   background-color: #f5d6d8;
-  background-image: url("/images/seccioinmetricas.png");
+  background-image: url("/images/seccionmetricas.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2598,14 +2598,13 @@ body.content-modal-open {
 }
 
 .metric-card {
-  min-width: 0;
-  margin: 0;
-  padding: 8px;
-  background: rgba(255, 250, 249, 0.88);
-  border: 1px solid rgba(255, 255, 255, 0.75);
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(92, 53, 59, 0.09);
-  backdrop-filter: blur(4px);
+  position: relative;
+  overflow: hidden;
+  cursor: zoom-in;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .metric-card img {
@@ -2647,4 +2646,304 @@ body.content-modal-open {
   .metric-card {
     padding: 5px;
   }
+}
+
+/* ========================================
+   TESTIMONIOS
+======================================== */
+
+.testimonials {
+  padding: 56px 0 64px;
+  background: #fffaf8;
+  overflow: hidden;
+}
+
+.testimonials-heading {
+  text-align: center;
+  padding: 0 20px;
+  margin: 0 auto 32px;
+}
+
+.testimonials-eyebrow {
+  display: inline-block;
+  margin-bottom: 9px;
+  color: #a4777e;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  font-weight: 500;
+}
+
+.testimonials-heading h2 {
+  margin: 0;
+  color: #503b40;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1.15;
+  font-weight: 500;
+}
+
+.testimonials-heading h2 em {
+  color: #b67e88;
+  font-weight: 400;
+}
+
+.testimonials-heading p {
+  margin: 10px 0 0;
+  color: #887679;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.testimonials-carousel {
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonials-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonials-track {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  width: max-content;
+  padding: 8px max(6%, calc((100vw - 1120px) / 2));
+}
+
+
+.testimonial-card {
+  position: relative;
+  flex: 0 0 260px;
+  width: 260px;
+  margin: 0;
+  padding: 9px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #f0e2e1;
+  border-radius: 12px;
+  box-shadow: 0 7px 24px rgba(94, 61, 65, 0.06);
+  scroll-snap-align: start;
+  cursor: zoom-in;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  border-color: #e4bfc4;
+  box-shadow: 0 14px 32px rgba(94, 61, 65, 0.13);
+}
+
+.testimonial-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 380px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 6px;
+  transition: transform 0.35s ease;
+}
+
+.testimonial-card:hover img {
+  transform: scale(1.025);
+}
+
+.testimonial-card::after {
+  content: "↗ Ampliar";
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  padding: 7px 11px;
+  color: #684b50;
+  background: rgba(255, 250, 248, 0.94);
+  border-radius: 20px;
+  font-size: 12px;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+
+.testimonial-card:hover::after,
+.testimonial-card:focus-visible::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (hover: none) {
+  .testimonial-card::after {
+    opacity: 1;
+    transform: none;
+    content: "⊕ Ver imagen";
+  }
+
+  .testimonial-card:hover {
+    transform: none;
+  }
+}
+
+.testimonials-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.testimonials-caption {
+  color: #927a7d;
+  font-size: 0.78rem;
+}
+
+.testimonial-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid #e7c9cc;
+  border-radius: 50%;
+  background: transparent;
+  color: #80565b;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s ease,
+              color 0.2s ease;
+}
+
+.testimonial-arrow:hover {
+  background: #f2dfe0;
+}
+
+.testimonial-arrow:focus-visible {
+  outline: 2px solid #b67e88;
+  outline-offset: 3px;
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+  .testimonials {
+    padding: 42px 0 48px;
+  }
+
+  .testimonials-heading {
+    margin-bottom: 24px;
+  }
+
+  .testimonials-track {
+    gap: 14px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .testimonial-card {
+    flex-basis: min(76vw, 280px);
+    width: min(76vw, 280px);
+  }
+
+  .testimonials-controls {
+    margin-top: 18px;
+  }
+}
+
+/* Efectos interactivos para las imágenes de métricas */
+.metric-card {
+  cursor: zoom-in;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(94, 61, 65, 0.16);
+}
+
+.metric-card img {
+  transition: transform 0.35s ease;
+}
+
+.metric-card:hover img {
+  transform: scale(1.025);
+}
+
+.metric-card::after {
+  content: "↗ Ampliar";
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  padding: 7px 11px;
+  color: #684b50;
+  background: rgba(255, 250, 248, 0.94);
+  border-radius: 20px;
+  font-size: 12px;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+
+.metric-card:hover::after,
+.metric-card:focus-visible::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (hover: none) {
+  .metric-card::after {
+    content: "⊕ Ver imagen";
+    opacity: 1;
+    transform: none;
+  }
+
+  .metric-card:hover {
+    transform: none;
+  }
+}
+/* Visor ampliado de estadísticas y testimonios */
+.testimonial-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px 24px;
+  background: rgba(35, 25, 28, 0.88);
+}
+
+.testimonial-lightbox.is-open {
+  display: flex;
+}
+
+.testimonial-lightbox img {
+  display: block;
+  max-width: 100%;
+  max-height: calc(100vh - 100px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.testimonial-lightbox-close {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  z-index: 1;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  background: transparent;
+  color: white;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
 }
