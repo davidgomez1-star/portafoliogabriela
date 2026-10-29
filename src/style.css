@@ -2302,3 +2302,47 @@ body.content-modal-open {
   line-height: 1;
   cursor: pointer;
 }
+
+/* Estado visible de los logos */
+#marcas.is-visible .brand-orbit {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Efecto al pasar el cursor */
+
+/* Interacción suave para los logos */
+#marcas .brand-orbit {
+  transition:
+    filter 250ms ease,
+    box-shadow 250ms ease;
+  transform-origin: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Efecto hover */
+#marcas.is-visible .brand-orbit:hover {
+  z-index: 20;
+  filter: brightness(1.08) drop-shadow(0 3px 6px rgba(197, 139, 155, 0.3));
+}
+
+/* Realce al navegar con teclado */
+#marcas .brand-orbit:focus-visible {
+  outline: 2px solid #c58b9b;
+  outline-offset: 5px;
+}
+
+/* Accesibilidad: navegación con teclado */
+#marcas .brand-orbit:focus-visible {
+  outline: 2px solid #c58b9b;
+  outline-offset: 5px;
+}
+
+#marcas .brand-orbit img {
+  transition: transform 250ms ease, filter 250ms ease;
+}
+
+#marcas.is-visible .brand-orbit:hover img {
+  transform: scale(1.07);
+  filter: drop-shadow(0 2px 4px rgba(197, 139, 155, 0.25));
+}
