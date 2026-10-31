@@ -2597,3 +2597,45 @@ body.content-modal-open {
     margin-top: 42px;
   }
 }
+
+/* ICONOS DE REDES SOCIALES */
+
+.nav-social {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin: 0 5px;
+}
+
+.nav-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  color: #a87585;
+  font-size: 25px;
+  text-decoration: none;
+  transition: color 250ms ease, transform 250ms ease;
+}
+
+.nav-social a:hover {
+  color: #76505d;
+  transform: translateY(-3px) scale(1.08);
+}
+
+/* AJUSTES PARA MÓVILES */
+
+@media (max-width: 768px) {
+  .nav-social {
+    justify-content: center;
+    gap: 25px;
+    margin: 12px 0;
+  }
+
+  .nav-social a {
+    width: 46px;
+    height: 46px;
+    font-size: 28px;
+  }
+}
