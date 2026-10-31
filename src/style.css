@@ -1868,9 +1868,7 @@ body.content-modal-open {
   }
 }
 
-/* Reducir visualmente el Reel incrustado sin cambiar el tamaño del modal.
-   Instagram controla el ancho interno del embed; zoom permite escalarlo
-   también cuando el script oficial reemplaza el blockquote por un iframe. */
+/* Organización de las publicaciones */
 .content-post {
   min-width: 0;
   display: flex;
@@ -1878,20 +1876,38 @@ body.content-modal-open {
   align-items: center;
 }
 
-.content-post .instagram-media {
-  width: 400px !important;
-  max-width: none !important;
-  min-width: 326px !important;
-  margin: 0 auto 12px !important;
-  zoom: 0.78;
+/* Contenedor del Reel */
+.instagram-video-wrapper {
+  width: 312px;
+  height: 507px;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto 12px;
+  border-radius: 10px;
 }
 
+/* Escalado del reproductor */
+.instagram-video-wrapper iframe {
+  display: block;
+  width: 400px;
+  height: 650px;
+  max-width: none;
+  border: none;
+  zoom: 0.78;
+  transform-origin: top left;
+}
+
+/* Adaptación para móviles */
 @media (max-width: 600px) {
-  .content-post .instagram-media {
-    zoom: 0.72;
+  .instagram-video-wrapper {
+    width: 280px;
+    height: 455px;
+  }
+
+  .instagram-video-wrapper iframe {
+    zoom: 0.7;
   }
 }
-
 
 /* ========================================
    MÉTRICAS — COMPOSICIÓN CON FONDO
@@ -2345,4 +2361,239 @@ body.content-modal-open {
 #marcas.is-visible .brand-orbit:hover img {
   transform: scale(1.07);
   filter: drop-shadow(0 2px 4px rgba(197, 139, 155, 0.25));
+}
+
+/* =========================================
+   SECCIÓN DE SERVICIOS
+========================================= */
+
+.services-section {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 110px;
+  overflow: hidden;
+}
+
+.services-heading {
+  max-width: 760px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.services-heading .eyebrow {
+  margin-bottom: 16px;
+  color: #b58b96;
+  font-size: 10px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.services-heading h2 {
+  margin: 0;
+  font-size: clamp(38px, 6vw, 66px);
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+
+.services-heading h2 em {
+  font-family: inherit;
+  font-weight: 400;
+}
+
+.services-sparkle {
+  color: #c58b9b;
+  font-size: 30px;
+  vertical-align: top;
+}
+
+.services-intro {
+  max-width: 440px;
+  margin: 18px auto 0;
+  color: #777078;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Lista de tarjetas */
+
+.services-list {
+  width: min(780px, 100%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.service-card {
+  overflow: hidden;
+  border: 1px solid rgba(197, 139, 155, 0.23);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 5px 20px rgba(110, 77, 88, 0.045);
+  transition:
+    border-color 250ms ease,
+    box-shadow 250ms ease,
+    background 250ms ease;
+}
+
+.service-card:hover,
+.service-card.is-open {
+  border-color: rgba(197, 139, 155, 0.55);
+  background: #fffdfd;
+  box-shadow: 0 9px 26px rgba(110, 77, 88, 0.08);
+}
+
+/* Botón principal */
+
+.service-toggle {
+  width: 100%;
+  min-height: 88px;
+  padding: 20px 25px;
+  display: grid;
+  grid-template-columns: 42px 1fr 36px;
+  align-items: center;
+  gap: 15px;
+  border: none;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.service-number {
+  color: #bd929e;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.service-title {
+  color: #51474d;
+  font-size: 17px;
+  font-weight: 500;
+  transition: color 250ms ease;
+}
+
+.service-card:hover .service-title,
+.service-card.is-open .service-title {
+  color: #a87585;
+}
+
+.service-icon {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(197, 139, 155, 0.4);
+  border-radius: 50%;
+  color: #b78392;
+  font-size: 21px;
+  font-weight: 300;
+  transition:
+    transform 250ms ease,
+    background 250ms ease,
+    color 250ms ease;
+}
+
+.service-card.is-open .service-icon {
+  transform: rotate(180deg);
+  background: #c58b9b;
+  color: white;
+}
+
+/* Descripción desplegable */
+
+.service-content {
+  padding: 0 76px 25px 82px;
+}
+
+.service-content p {
+  max-width: 570px;
+  margin: 0;
+  color: #777078;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* Cierre de la sección */
+
+.services-footer {
+  margin: 55px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.services-footer > span:first-child {
+  color: #777078;
+  font-size: 13px;
+}
+
+.services-footer a {
+  color: #a87585;
+  font-size: 15px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(197, 139, 155, 0.5);
+  padding-bottom: 5px;
+  transition: color 250ms ease;
+}
+
+.services-footer a:hover {
+  color: #76505d;
+}
+
+.services-signature {
+  margin-top: 12px;
+  color: #b58b96;
+  font-family: inherit;
+  font-size: 12px;
+}
+
+/* Adaptación para móviles */
+
+@media (max-width: 600px) {
+  .services-section {
+    padding-top: 70px;
+    padding-bottom: 75px;
+  }
+
+  .services-heading {
+    margin-bottom: 32px;
+  }
+
+  .services-intro {
+    padding: 0 15px;
+    font-size: 13px;
+  }
+
+  .service-toggle {
+    min-height: 76px;
+    padding: 17px 15px;
+    grid-template-columns: 27px 1fr 32px;
+    gap: 10px;
+  }
+
+  .service-title {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .service-number {
+    font-size: 10px;
+  }
+
+  .service-content {
+    padding: 0 18px 22px 52px;
+  }
+
+  .service-content p {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .services-footer {
+    margin-top: 42px;
+  }
 }

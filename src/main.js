@@ -334,52 +334,218 @@ if (brandsCanvas && brandsSection) {
         title: 'Belleza y Skincare',
         description:
           'Rutinas, productos favoritos y experiencias de cuidado personal.',
-        posts: [
-          {
-            instagramUrl: 'https://www.instagram.com/reel/DeQDM17xtz9/',
-            title: 'Belleza y Skincare',
-            description: 'Contenido de cuidado personal y belleza.',
-          },
-        ],
+
+          posts: [
+            {
+                instagramUrl: 'https://www.instagram.com/reel/DeQDM17xtz9/',
+                title: 'Belleza y Skincare',
+                description: 'Contenido de belleza y cuidado personal.'
+            },
+            {
+                instagramUrl: 'https://www.instagram.com/reel/DbUFH15RDx1/',
+                title: 'Belleza y Skincare',
+                description: 'Contenido de belleza y cuidado personal.'
+            },
+            {
+                instagramUrl: 'https://www.instagram.com/reel/DcmLJsRRgBA/',
+                title: 'Belleza y Skincare',
+                description: 'Contenido de belleza y cuidado personal.'
+            },
+            {
+                instagramUrl: 'https://www.instagram.com/reel/DdXdjFmx_YC/',
+                title: 'Belleza y Skincare',
+                description: 'Contenido de belleza y cuidado personal.'
+            },
+            {
+                instagramUrl: 'https://www.instagram.com/reel/DdpW9G9xRVe/',
+                title: 'Belleza y Skincare',
+                description: 'Contenido de belleza y cuidado personal.'
+            },
+            {
+                instagramUrl: 'https://www.instagram.com/reel/DeFVTb6RE4Z/',
+                title: 'Belleza y Skincare',
+                description: 'Contenido de belleza y cuidado personal.'
+            },
+            {
+                instagramUrl: 'https://www.instagram.com/reel/DeIVlyIR7Pi/',
+                title: 'Belleza y Skincare',
+                description: 'Contenido de belleza y cuidado personal.'
+            }
+        ]
       },
   
+
       food: {
         title: 'Gastronomía',
         description: 'Sabores, lugares especiales y experiencias gastronómicas.',
         posts: [
           {
+            instagramUrl: 'https://www.instagram.com/reel/Da8UYlwxBgx/',
+            title: 'Empicadas',
+            description: 'Una experiencia gastronómica para descubrir nuevos sabores.'
+          },
+          {
+            instagramUrl: 'https://www.instagram.com/reel/DbrBtdEx_v-/',
+            title: 'JM Artesano',
+            description: 'Una propuesta artesanal para disfrutar y compartir.'
+          },
+          {
+            instagramUrl: 'https://www.instagram.com/reel/Dc1XqhxxPqk/',
+            title: 'GelatiMarte',
+            description: 'Una experiencia dulce para los amantes del helado.'
+          },
+          {
             instagramUrl: 'https://www.instagram.com/reel/Dc4OC0-x0-y/',
-            title: 'Experiencia gastronómica',
-            description: 'Contenido de gastronomía.',
+            title: 'Sushi Break',
+            description: 'Una experiencia gastronómica alrededor del sushi.'
+          },
+          {
+            instagramUrl: 'https://www.instagram.com/reel/Dd4VnC-xUHz/',
+            title: 'JM Artesano: Galletas',
+            description: 'Una propuesta artesanal dedicada al mundo de las galletas.'
           },
         ],
       },
+      
   
+
       hair: {
-        title: 'Capilar',
-        description:
-          'Rutinas, productos y experiencias para el cuidado del cabello.',
+        title: 'Mundo Capilar',
+        description: 'Rutinas, productos y experiencias para el cuidado del cabello.',
         posts: [
+          {
+            instagramUrl: 'https://www.instagram.com/reel/Dc6vwMFR8iZ/',
+            title: 'Shampoo Ritual Botánica',
+            description: 'Una experiencia de cuidado capilar con Ritual Botánica.'
+          },
+          {
+            instagramUrl: 'https://www.instagram.com/reel/DbEDWd_Rdih/',
+            title: 'Mascarilla Ritual Botánica',
+            description: 'Contenido sobre el cuidado y tratamiento del cabello.'
+          },
           {
             instagramUrl: 'https://www.instagram.com/reel/DdUkjNbRPkw/',
-            title: 'Cuidado capilar',
-            description: 'Contenido sobre el cuidado del cabello.',
+            title: 'Rutina Capilar',
+            description: 'Una rutina dedicada al cuidado del cabello.'
           },
-        ],
-      },
-  
-      travel: {
-        title: 'Viaje y Turismo',
-        description:
-          'Destinos, planes y momentos que inspiran a descubrir nuevos lugares.',
-        posts: [
           {
-            instagramUrl: 'https://www.instagram.com/reel/DdmQ1MZRAT8/',
-            title: 'Viaje y Turismo',
-            description: 'Contenido de viajes y destinos.',
+            instagramUrl: 'https://www.instagram.com/reel/DdZ9wfzRsdQ/',
+            title: 'Loción o Perfume Capilar',
+            description: 'Una propuesta para complementar el cuidado capilar.'
           },
         ],
       },
+        
+
+travel: {
+  title: 'Viaje y Turismo',
+  description: 'Destinos, planes y momentos que inspiran a descubrir nuevos lugares.',
+  posts: [
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DUZguZSjd-T/',
+      title: 'Viaje a Boyacá',
+      description: 'Un recorrido para descubrir los paisajes y encantos de Boyacá.'
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DUa-rZWEZ8m/',
+      title: 'Vlog: Tibasosa, Boyacá',
+      description: 'Una experiencia recorriendo Tibasosa y sus atractivos.'
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DXnZYfDDe-B/',
+      title: 'Catedral de Manizales',
+      description: 'Una visita a uno de los lugares emblemáticos de Manizales.'
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DZaYK7xRzxl/',
+      title: 'Villa Natalia, Salento',
+      description: 'Una experiencia para disfrutar de los paisajes y el encanto de Salento.'
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DcWzsRURYrC/',
+      title: 'Castillo del Café',
+      description: 'Una visita para descubrir este destino turístico.'
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DcehJFTxi6Q/',
+      title: 'Jardín Botánico Gamonrá',
+      description: 'Un recorrido por un espacio natural lleno de vida.'
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/Dcodrc9xki2/',
+      title: 'Maderero Campestre',
+      description: 'Una experiencia para disfrutar de un entorno campestre.'
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DdmQ1MZRAT8/',
+      title: 'Avistamiento de ballenas, Buenaventura',
+      description: 'Una experiencia de naturaleza y avistamiento de ballenas en Buenaventura.'
+    },
+  ],
+},
+
+projects: {
+  title: 'Experiencias de marca',
+  description: 'Campañas, colaboraciones y proyectos creativos.',
+  posts: [
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DbRCi7oRyXv/',
+      title: 'Proyecto de óptica',
+      description: 'Experiencia de marca y contenido visual.'
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DdCaLbjxODn/',
+      title: 'Campaña publicitaria',
+      description: 'Contenido creativo para una marca.'
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DdPhI0_RLHV/',
+      title: 'Contenido de marca',
+      description: 'Una experiencia creativa para redes sociales.'
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/Dd6paIBxJfH/',
+      title: 'Maquillaje artístico',
+      description: 'Creatividad y expresión a través del maquillaje.'
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DeKmxlBRW0b/',
+      title: 'Proyecto creativo',
+      description: 'Contenido audiovisual y comunicación de marca.'
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DeiJRQ-Rn1O/',
+      title: 'Experiencia publicitaria',
+      description: 'Creación de contenido para redes sociales.'
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/p/DexFolUIPMU/',
+      title: 'Colaboración de marca',
+      description: 'Contenido y colaboración comercial.'
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DfCxP2kRl__/',
+      title: 'Proyecto de contenido',
+      description: 'Producción creativa para plataformas digitales.'
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/De4UTeCx2J4/',
+      title: 'Campaña Alkosto',
+      description: 'Contenido promocional relacionado con iPhone.'
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DfF--kMRbS5/',
+      title: 'Contenido publicitario',
+      description: 'Comunicación visual y promoción de marca.'
+    },
+    {
+      instagramUrl: 'https://www.instagram.com/reel/DP-NQvIDbyI/',
+      title: 'Proyecto especial',
+      description: 'Una experiencia más dentro de su trabajo creativo.'
+    }
+  ]
+}
+
     };
   
     // Navegación horizontal del carrusel.
@@ -401,106 +567,123 @@ if (brandsCanvas && brandsSection) {
     nextButton?.addEventListener('click', () => scrollCards(1));
   
     // Construye las publicaciones de una categoría.
-    function renderPosts(category) {
-      postsContainer.replaceChildren();
-  
-      if (!category.posts.length) {
-        const emptyState = document.createElement('div');
-        emptyState.className = 'content-empty';
-  
-        const symbol = document.createElement('div');
-        symbol.className = 'content-empty-symbol';
-        symbol.textContent = '✧';
-  
-        const heading = document.createElement('h3');
-        heading.textContent = 'Próximamente';
-  
-        const message = document.createElement('p');
-        message.textContent =
-          'Estamos preparando esta selección de videos. Muy pronto podrás explorar las publicaciones de esta categoría.';
-  
-        emptyState.append(symbol, heading, message);
-        postsContainer.appendChild(emptyState);
-        return;
+
+// Construye las publicaciones de una categoría.
+function renderPosts(category) {
+  postsContainer.replaceChildren();
+
+  if (!category.posts.length) {
+    const emptyState = document.createElement('div');
+    emptyState.className = 'content-empty';
+
+    const symbol = document.createElement('div');
+    symbol.className = 'content-empty-symbol';
+    symbol.textContent = '✧';
+
+    const heading = document.createElement('h3');
+    heading.textContent = 'Próximamente';
+
+    const message = document.createElement('p');
+    message.textContent =
+      'Estamos preparando esta selección de videos. Muy pronto podrás explorar las publicaciones de esta categoría.';
+
+    emptyState.append(symbol, heading, message);
+    postsContainer.appendChild(emptyState);
+    return;
+  }
+
+  category.posts.forEach((post) => {
+    const article = document.createElement('article');
+    article.className = 'content-post';
+
+    // Insertar Reel de Instagram.
+
+    // Insertar Reel de Instagram.
+// Insertar Reel de Instagram.
+// Insertar Reel de Instagram.
+if (post.instagramUrl) {
+  const reelUrl = post.instagramUrl
+    .split('?')[0]
+    .replace(/\/$/, '');
+
+  const videoWrapper = document.createElement('div');
+  videoWrapper.className = 'instagram-video-wrapper';
+
+  const iframe = document.createElement('iframe');
+
+  iframe.src = `${reelUrl}/embed/`;
+  iframe.title = post.title || 'Video de Instagram';
+  iframe.setAttribute('frameborder', '0');
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.setAttribute('scrolling', 'no');
+
+  videoWrapper.appendChild(iframe);
+  article.appendChild(videoWrapper);
+}
+    // Reproducción de videos MP4.
+    else if (post.videoUrl) {
+      const video = document.createElement('video');
+      video.className = 'content-post-media';
+      video.src = post.videoUrl;
+      video.controls = true;
+      video.preload = 'metadata';
+      video.playsInline = true;
+
+      if (post.poster) {
+        video.poster = post.poster;
       }
-  
-      category.posts.forEach((post) => {
-        const article = document.createElement('article');
-        article.className = 'content-post';
-  
-        // Insertar un Reel público de Instagram.
-        if (post.instagramUrl) {
-          const embed = document.createElement('blockquote');
-          embed.className = 'instagram-media';
-          embed.setAttribute('data-instgrm-permalink', post.instagramUrl);
-          embed.setAttribute('data-instgrm-version', '14');
-  
-          const link = document.createElement('a');
-          link.href = post.instagramUrl;
-          link.target = '_blank';
-          link.rel = 'noopener noreferrer';
-          link.textContent = 'Ver Reel en Instagram';
-  
-          embed.appendChild(link);
-          article.appendChild(embed);
-        } else if (post.videoUrl) {
-          const video = document.createElement('video');
-          video.className = 'content-post-media';
-          video.src = post.videoUrl;
-          video.controls = true;
-          video.preload = 'metadata';
-          video.playsInline = true;
-  
-          if (post.poster) {
-            video.poster = post.poster;
-          }
-  
-          article.appendChild(video);
-        } else if (post.poster) {
-          const image = document.createElement('img');
-          image.className = 'content-post-media';
-          image.src = post.poster;
-          image.alt = post.title || 'Portada de publicación';
-          image.loading = 'lazy';
-          article.appendChild(image);
-        }
-  
-        const heading = document.createElement('h3');
-        heading.textContent = post.title || 'Una experiencia para compartir';
-        article.appendChild(heading);
-  
-        if (post.description) {
-          const description = document.createElement('p');
-          description.textContent = post.description;
-          article.appendChild(description);
-        }
-  
-        postsContainer.appendChild(article);
-      });
-  
-      // Cargar el script oficial de Instagram una sola vez.
-      const scriptUrl = 'https://www.instagram.com/embed.js';
-      let script = document.querySelector(`script[src="${scriptUrl}"]`);
-  
-      if (!script) {
-        script = document.createElement('script');
-        script.src = scriptUrl;
-        script.async = true;
-        script.onload = () => {
-          window.instgrm?.Embeds?.process();
-        };
-        document.body.appendChild(script);
-      } else if (window.instgrm?.Embeds) {
-        window.instgrm.Embeds.process();
-      } else {
-        script.addEventListener(
-          'load',
-          () => window.instgrm?.Embeds?.process(),
-          { once: true }
-        );
-      }
+
+      article.appendChild(video);
     }
-  
+
+    // Mostrar imagen cuando no hay video.
+    else if (post.poster) {
+      const image = document.createElement('img');
+      image.className = 'content-post-media';
+      image.src = post.poster;
+      image.alt = post.title || 'Portada de publicación';
+      image.loading = 'lazy';
+
+      article.appendChild(image);
+    }
+
+    const heading = document.createElement('h3');
+    heading.textContent = post.title || 'Una experiencia para compartir';
+    article.appendChild(heading);
+
+    if (post.description) {
+      const description = document.createElement('p');
+      description.textContent = post.description;
+      article.appendChild(description);
+    }
+
+    postsContainer.appendChild(article);
+  });
+
+  // Procesar las publicaciones con el script oficial de Instagram.
+  const scriptUrl = 'https://www.instagram.com/embed.js';
+  let script = document.querySelector(`script[src="${scriptUrl}"]`);
+
+  if (!script) {
+    script = document.createElement('script');
+    script.src = scriptUrl;
+    script.async = true;
+
+    script.onload = () => {
+      window.instgrm?.Embeds?.process();
+    };
+
+    document.body.appendChild(script);
+  } else if (window.instgrm?.Embeds) {
+    window.instgrm.Embeds.process();
+  } else {
+    script.addEventListener(
+      'load',
+      () => window.instgrm?.Embeds?.process(),
+      { once: true }
+    );
+  }
+}
     // Abrir la ventana superpuesta.
     function openModal(categoryKey) {
       const category = categories[categoryKey];
@@ -550,7 +733,9 @@ if (brandsCanvas && brandsSection) {
         closeModal();
       }
     });
-  })();/* =========================================
+  })();
+  
+  /* =========================================
   CARRUSEL DE TESTIMONIOS
 ========================================= */
 
@@ -692,4 +877,28 @@ metricCards.forEach((card) => {
      openTestimonialLightbox(image, card);
    }
  });
+});
+
+/* =========================================
+   INTERACCIÓN DE TARJETAS DE SERVICIOS
+========================================= */
+
+const serviceButtons = document.querySelectorAll('.service-toggle');
+
+serviceButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const serviceCard = button.closest('.service-card');
+    const serviceContent = document.getElementById(
+      button.getAttribute('aria-controls')
+    );
+    const serviceIcon = button.querySelector('.service-icon');
+
+    const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+    button.setAttribute('aria-expanded', String(!isExpanded));
+    serviceContent.hidden = isExpanded;
+    serviceCard.classList.toggle('is-open', !isExpanded);
+
+    serviceIcon.textContent = isExpanded ? '+' : '−';
+  });
 });
